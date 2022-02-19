@@ -16,8 +16,7 @@ const energy = (userInput * LIGHTSPEED * LIGHTSPEED);
 try {
   if(isNaN(userInput)) throw "Invalid Input";
     console.log("\nThe amount of energy the object would produce is:" + energy + " x10¹⁶ joules");
-  }finally {
-	console.log("Please Enter A Number")
-}
-console.log("\nDone")
-                         
+    console.log("\nDone")
+  }finally {""}
+
+        
