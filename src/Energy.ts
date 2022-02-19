@@ -10,13 +10,14 @@ import promptSync from 'prompt-sync';
 const prompt = promptSync();
 
 const LIGHTSPEED = 2.998;
-
-var userInput = prompt('Insert the mass of the object in Kg:');
-let energy = (userInput * LIGHTSPEED * LIGHTSPEED);
+const userInputString = prompt('Insert the mass of the object in Kg:');
+const userInput = parseFloat(userInputString)
+const energy = (userInput * LIGHTSPEED * LIGHTSPEED);
 try {
   if(isNaN(userInput)) throw "Invalid Input";
     console.log("\nThe amount of energy the object would produce is:" + energy + " x10¹⁶ joules");
-   userInput = Number(userInput);
-  }finally {}
+  }finally {
+	console.log("Please Enter A Number")
+}
 console.log("\nDone")
-                      
+                         
